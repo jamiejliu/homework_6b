@@ -1,13 +1,16 @@
 // Load Existing Appointments onto Appointments Page
+var appts;
+
 function loadAppointments() {
   let upcomingText = document.getElementById("upcomingText");
-  var appts = JSON.parse(localStorage.getItem("appts"));
+  appts = JSON.parse(localStorage.getItem("appts"));
   let upcomingAppointments = document.getElementById("upcomingAppointments");
   console.log(appts);
-  if (appts === null) {
+  if (appts === null || appts.length === 0) {
     appts = [];
     let noAppointments = document.createElement("p");
     noAppointments.innerHTML = "You have no upcoming appointments scheduled.";
+    console.log("HERE")
     upcomingAppointments.appendChild(noAppointments);
     upcomingText.innerHTML = "Upcoming Appointments: 0";
   }
@@ -29,8 +32,9 @@ function loadAppointments() {
       viewDetails.setAttribute("id", "expandModal");
 
       // Fill in Appointment Details
-      viewDetails.setAttribute("onclick", `apptModal("${appts[i].type}", "${appts[i].date}", "${appts[i].time}")`);
+      viewDetails.setAttribute("onclick", `apptModal("${appts[i].type}", "${appts[i].date}", "${appts[i].time}",  "${i}")`);
       viewDetails.classList.add("expandModal");
+      // add in i to apptModal
       viewDetails.innerHTML = "More Details";
       appt.appendChild(viewDetails);
       if(i%2 == 0){
@@ -43,18 +47,20 @@ function loadAppointments() {
   }
 }
 
-// Create Modal for Upcoming Appointments
-function apptModal(type, date, time) {
 
+// Create Modal for Upcoming Appointments
+function apptModal(type, date, time, i) {
+// include i
   var modal = document.getElementById("detailsModal");
   let modalType = document.getElementById("modalType");
   let modalDate = document.getElementById("modalDate");
-  let modalTime = document.getElementById("modalTime")
+  let modalTime = document.getElementById("modalTime");
+  let cancelBtn = document.getElementById("cancel")
   modalType.innerHTML = type;
   modalDate.innerHTML = "Date: " + date;
   modalTime.innerHTML = "Time: " + time;
   modal.style.display = "block";
-
+  cancelBtn.setAttribute("onclick", `cancelAppointment("${i}")`);
 
   window.onclick = function(event) {
   if (event.target == modal) {
@@ -63,9 +69,20 @@ function apptModal(type, date, time) {
   };
 }
 
-function spanClose(){
-  var modal = document.getElementById("detailsModal");
-  modal.style.display = "none";
+  function spanClose(){
+    var modal = document.getElementById("detailsModal");
+    modal.style.display = "none";
+
+}
+
+// Cancel Appointment
+function cancelAppointment(i) {
+  //let upcomingAppointments = document.getElementById("upcomingAppointments");
+  //upcomingAppointments.removeChild(upcomingAppointments.children[i]);
+  //spanClose();
+  appts.splice(i,1);
+  localStorage.setItem("appts",JSON.stringify(appts));
+  location.reload();
 }
 
 loadAppointments();

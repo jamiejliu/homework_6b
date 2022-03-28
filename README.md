@@ -1,11 +1,14 @@
-HOMEWORK 6A README FILE
+HOMEWORK 6B README FILE
 
-For homework 6a, my website is able to schedule & save appointments.
-You can schedule appointments either from the home page or the appointments tab.
+For homework 6b, my website is able to cancel appointments from the Appointment page.
+
+
+
+WEBSITE INSTRUCTIONS
+From the home page, index.html, you can schedule a new appointment. You may also navigate to the Appointments page to schedule an appointment.
 
 After scheduling a new appointment, you will see a confirmation page with the appointment details.
 
-To use the project, begin with the index.html file to enter the home page. Then, use the button on the homepage to schedule an appointment or navigate to the Appointments page to view any existing appointments or schedule a new appointment.
+On the appointments page, you will see upcoming appointments in more detail and have to ability to cancel them.
 
-
-In the future, you will be able to manage your appointments from the appointments tab. Please note that I have not built out that functionality yet. I also have not built out the lab results or forms pages yet. I have not yet linked the "Upcoming Appointments" table on the home page to the upcoming appointments, but in the future, those dates and details will update accordingly.
+In the future, I will link the "Upcoming Appointments" table on the home page to the savedd appointments in memory, so those dates and details will update accordingly.
