@@ -1,0 +1,359 @@
+/*********** IN LINE STYLES ************/
+body {
+  margin: 0;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+
+h1{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+h2{
+  font-size:  20px;
+}
+
+
+h3{
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+ul{
+  padding: 0%;
+}
+
+li{
+  padding: 10% 10% 10% 15%;
+}
+
+
+a{
+  text-decoration: none;
+  color:  #000;
+}
+
+a:hover{
+  text-decoration:  underline;
+}
+
+/*********** TOP NAV ************/
+#topnav {
+  overflow: hidden;
+  background-color: #951120;
+  clear: both;
+}
+
+#topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1%;
+  font-size: 16px;
+  float:  right;
+}
+
+#logo {
+  display: block;
+  padding: 1%;
+  width: 20%;
+  float:  left;
+
+}
+
+/*********** SIDE NAV ************/
+#sidenav {
+  height: 100vh;
+  width: 20%;
+  background-color: #e3dac3;
+  float: left;
+}
+
+
+#links {
+  list-style: none;
+}
+
+.active{
+  background-color: #FFF;
+}
+
+
+/*********** PAGE CONTENT************/
+#content {
+  float: left;
+  text-align: left;
+  margin-left: 10%;
+  width: 66%;
+}
+
+.col1 {
+  float:  left;
+  width:  45%;
+}
+
+.col2 {
+  float:  left;
+  width:  50%;
+}
+
+.col3{
+  float:  left;
+  width: 40%;
+}
+/*********** BUTTONS ************/
+button {
+  background-color: #951120;
+  border:  none;
+  color:  white;
+  padding-top: 2%;
+  padding-bottom:  2%;
+  text-align:  center;
+  text-decoration: none;
+  display:  inline-block;
+  font-size:  18px;
+  border-radius: 8px;
+  width:  75%;
+  margin: 1%;
+}
+
+.buttonlink{
+  color: white;
+}
+
+#small-button{
+  width: 50%;
+  margin-top:  10%;
+}
+
+.confirm-button{
+  margin-top:  5%;
+  margin-left: 18%;
+  width: 50%;
+}
+
+.back{
+  margin-left: 5%;
+}
+
+#expandModal{
+  background-color: #FFF;
+  color: black;
+  font-size: 14px;
+  float: right;
+}
+
+.expandModal:hover{
+  text-decoration: underline;
+}
+
+#return-home{
+  margin: auto;
+  position: relative;
+  left: 36%;
+  width: 25%;
+}
+
+
+/*********** RADIO BUTTONS  ************/
+#timeradio input[type="radio"] {
+  opacity: 0;
+  position:  fixed;
+  width: 0;
+}
+
+#timeradio label {
+  display: inline-block;
+  background-color:  #FFF;
+  color: black;
+  border: 2px solid #C4C4C4;
+  margin-top: 10px;
+  width:  auto;
+  padding: 5%;
+  font-size: 14px;
+  padding: 5%;
+  border-radius: 10%;
+}
+
+#timeradio input[type="radio"]:checked + label {
+  background-color: #951120;
+  color: white;
+}
+
+#timeradio label:hover {
+  background-color: #C4C4C4;
+}
+
+
+/*********** DROPDOWN MENU ************/
+select{
+  padding: 2% 5% 2% 2%;
+  width:  90%;
+}
+
+.container {
+  display: block;
+  position: relative;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  cursor: pointer;
+  font-size: 18px;
+  width: 50%;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 1%;
+  left: -42%;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #951120;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/*********** TABLES ************/
+table {
+  margin:  1%;
+  text-align: left;
+}
+
+#upcoming-appointments-tb, #lab-results-tb, #previous-appointments-tb{
+border:  1px solid #000;
+padding: 2%;
+border-collapse:  collapse;
+width:  90%;
+}
+
+#upcoming-appointments-tb td, #upcoming-appointments-tb th,#lab-results-tb td, #lab-results-tb th, #previous-appointments-tb td, #previous-appointments-tb th{
+  border:  1px solid #000;
+  padding:  1.5%;
+}
+
+#upcoming-appointments-tb th, #lab-results-tb th, #previous-appointments-tb th {
+  padding: 1% 5% 1% 2%;
+  text-align: left;
+  background-color: #FFF;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#upcoming-appointments-tb tr:nth-child(even), #lab-results-tb tr:nth-child(even),#previous-appointments-tb tr:nth-child(even) {
+  background-color: #EAEAEA;
+}
+
+/*********** APPOINTMENTS PAGE CONTENT************/
+.upcoming-appointments {
+  width: 275px;
+  height: 100px;
+  border: 1px solid #C4C4C4;
+  padding: 20px;
+  box-shadow: 5px 10px 8px #EAEAEA;
+  margin-bottom: 36px;
+  margin-left: 10px;
+}
+
+.upcoming-appointments:hover {
+  box-shadow: 5px 10px 8px #C4C4C4;
+}
+
+.appointment-title{
+  font-size: 18px;
+  font-weight: bolder;
+  padding-bottom: 0.5%;
+}
+
+
+#appointment-confirmation {
+  margin: auto;
+  width: 50%;
+  border: 1px solid #C4C4C4;
+  padding:  10px;
+  box-shadow:  5px 10px 8px #EAEAEA;
+  margin-bottom: 5%;
+}
+
+/*********** MODAL ON APPOINTMENTS PAGE************/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  margin: auto;
+  padding: 2%;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+/*********** CONFIRMATION PAGE CONTENT************/
+#dateText{
+  margin-bottom: 0px;
+}
+
+
+#prevAppts{
+  clear: both;
+}
+
+
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CMU Health Center: Appointments </title>
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- javascript -->
+        <script src="main.js"> </script>
+        <!-- fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    </head>
+
+    <body>
+        <div id="topnav">
+            <img src="logo.png" id="logo">
+                <a href="#profile">Profile</a>
+                <a href="#alerts">Alerts</a>
+        </div>
+
+        <div id="sidenav">
+            <h2>
+            <ul id="links">
+                <li> <a href="index.html">Home</a></li>
+                <li class='active'><a href="#appointments">Appointments</a></li>
+                <li><a href="#labresults">Lab Results</a></li>
+                <li><a href="#forms">Forms</a></li>
+            </ul>
+        </h2>
+        </div>
+
+    <div id="content">
+        <div id="upcomingAppts">
+            <h1> Upcoming Appointments </h1>
+            <button> <a class="buttonlink" href="productdetail.html"> Schedule New Appointment</a> </button>
+            <p id="upcomingText"> </p>
+
+            <div id=upcomingAppointments>
+                <div class=col1 id=upcomingAppointmentsLeft>
+                </div>
+
+                <div class=col2 id=upcomingAppointmentsRight>
+                </div>
+            </div>
+
+            <div id="detailsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="spanClose()">&times;</span>
+                    <div id="modalContent">
+                        <h3 id="modalType"></h3>
+                    </div>
+                    <div class="col1">
+                        <div id=modalLeft>
+                            <p id="modalDate"></p>
+                            <p id="modalTime"></p>
+                            <br>
+                            <button id="edit">Edit Appointment</button>
+                        </div>
+                    </div>
+
+                    <div class=col2>
+                        <div id=modalRight>
+                            <p>Location: E Campus Garage</p>
+                            <p>Notes: Please arrive to your appointment within the 15 minute grace period.</p>
+                            <button id="cancel">Cancel Appointment</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="prevAppts">
+            <h1> Previous Appointments </h1>
+                <table id="previous-appointments-tb">
+                    <tr>
+                        <th> Appointment Date </th>
+                        <th> Appointment Type </th>
+                        <th> Lab Status </th>
+                    </tr>
+                    <tr>
+                        <td> Feb. 2, 2022 </td>
+                        <td> COVID-19 Tartan Test </td>
+                        <td> <a href="#Complete">Complete</a></td>
+                    </tr>
+                    <tr>
+                        <td> Jan. 29, 2022 </td>
+                        <td> COVID-19 Tartan Test </td>
+                        <td> <a href="#Complete">Complete</a></td>
+                    </tr>
+                    <tr>
+                        <td> Dec. 12, 2021 </td>
+                        <td> COVID-19 Booster  </td>
+                        <td> N/A</td>
+                    </tr>
+                    <tr>
+                        <td> Nov. 23, 2021 </td>
+                        <td> Flu Shot </td>
+                        <td> N/A </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <script src="appointment.js"> </script>
+</body>
+</html>

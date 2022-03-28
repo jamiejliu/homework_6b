@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CMU Health Center </title>
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- javascript -->
+        <script src="main.js"> </script>
+        <!-- fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    </head>
+
+
+    <body>
+        <div id="topnav">
+            <img src="logo.png" id="logo">
+                <a href="#profile">Profile</a>
+                <a href="#alerts">Alerts</a>
+        </div>
+
+        <div id="sidenav">
+            <h2>
+            <ul id="links">
+                <li class='active'> Home</li>
+                <li><a href="appointments.html">Appointments</a></li>
+                <li><a href="#labresults">Lab Results</a></li>
+                <li><a href="#forms">Forms</a></li>
+            </ul>
+        </h2>
+        </div>
+
+        <div id="content">
+            <h1> Quick Actions </h1>
+                <button><a class="buttonlink" href="productdetail.html">Schedule New Appointment</a> </button>
+<!--                 <br>
+                <button> <a class="buttonlink" href="productbrowsing.html"> Schedule New Appointment</a> </button> -->
+
+            <h1> Upcoming Appointments </h1>
+                <table id="upcoming-appointments-tb">
+                    <tr>
+                        <th> Date </th>
+                        <th> Time </th>
+                        <th> Appointment Type </th>
+                        <th> Actions </th>
+                    </tr>
+                    <tr>
+                        <td> Feb. 10 </td>
+                        <td> 10:00 AM </td>
+                        <td> COVID-19 Tartan Test </td>
+                        <td> <a href="#edit">Edit</a> | <a href="#cancel">Cancel</a> </td>
+                    </tr>
+                    <tr>
+                        <td> Feb. 12 </td>
+                        <td> 10:30 AM </td>
+                        <td> Influenza Vaccine </td>
+                        <td> <a href="#edit">Edit</a> | <a href="#cancel">Cancel</a> </td>
+                    </tr>
+                </table>
+
+            <h1> Lab Results </h1>
+                <table id="lab-results-tb">
+                    <tr>
+                        <th> Date </th>
+                        <th> Appointment Type </th>
+                        <th> Test Status </th>
+                    </tr>
+                    <tr>
+                        <td> Feb. 2 </td>
+                        <td> COVID-19 Tartan Test </td>
+                        <td> In Progress </td>
+                    </tr>
+                    <tr>
+                        <td> Jan. 29 </td>
+                        <td> COVID-19 Tartan Test </td>
+                        <td>  <a href="#seeresults">Complete | See Results</a> </td>
+                    </tr>
+                    <tr>
+                        <td> Jan. 14 </td>
+                        <td> COVID-19 Tartan Test </td>
+                        <td> <a href="#seeresults">Complete | See Results</a> </td>
+                    </tr>
+                </table>
+
+        </div>
+
+
+    </body>
+</html>

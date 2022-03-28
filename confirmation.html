@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Appointment Confirmed </title>
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- javascript -->
+        <script src="main.js"> </script>
+        <!-- fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    </head>
+
+    <body onload="confirmAppointmentType(); confirmAppointmentDate(); confirmAppointmentTime(); newAppointment()">
+        <div id="topnav">
+            <img src="logo.png" id="logo">
+                <a href="#profile">Profile</a>
+                <a href="#alerts">Alerts</a>
+        </div>
+
+        <div id="sidenav">
+            <h2>
+            <ul id="links">
+                <li> <a href="index.html">Home</a></li>
+                <li class='active'> <a href="appointments.html">Appointments</a></li>
+                <li><a href="#labresults">Lab Results</a></li>
+                <li><a href="#forms">Forms</a></li>
+            </ul>
+        </h2>
+        </div>
+
+    <div id="content">
+        <h1> Appointment Confirmed </h1>
+        <div id="appointment-confirmation">
+            <p class="appointment-title"> <span id="appt-type"></span></p>
+            <p> <span id="appt-date"></span><br>
+            <span id ="appt-time"></span><br>
+            UC E Garage <br>
+            <a class="details-link" href="#editdetails"> Edit Appointment </a>
+            </p>
+        </div>
+        <div>
+            <button id="return-home"> <a class="buttonlink" href="index.html"> Return to Home Page</a></button>
+        </div>
+    </div>
+    <script src="appointment.js"> </script>
+    </body>
+</html>
