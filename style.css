@@ -47,6 +47,9 @@ a:hover{
   overflow: hidden;
   background-color: #951120;
   clear: both;
+  position: fixed;
+  top: 0;
+  height: 50px;
 }
 
 #topnav a {
@@ -62,7 +65,6 @@ a:hover{
   padding: 1%;
   width: 20%;
   float:  left;
-
 }
 
 /*********** SIDE NAV ************/
@@ -76,6 +78,7 @@ a:hover{
   justify-content: space-between;
   overflow-y: auto;
   position: fixed;
+  margin-top: 50px;
 }
 
 
@@ -92,6 +95,7 @@ a:hover{
 #content {
   float: left;
   text-align: left;
+  margin-top: 75px;
   margin-left: 25%;
   width: 66%;
 }
