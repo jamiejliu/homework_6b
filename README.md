@@ -21,3 +21,6 @@ My website is not responsive to mobile devices yet.
 NEXT STEPS:
 My website is still not fully complete. I still need to code the Lab Results and Forms page.
 I also have not connected the "Upcoming Appointments" table on the home page with the saved appointments in memory. In the future, these dates and details should match the information on the Information page.
+
+HIGH-FI:
+I did not make any changes from my hi-fi prototype submitted in homework 6a. Please view that assignment's reflection for the design rationale.
