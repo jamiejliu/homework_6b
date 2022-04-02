@@ -10,7 +10,6 @@ function loadAppointments() {
     appts = [];
     let noAppointments = document.createElement("p");
     noAppointments.innerHTML = "You have no upcoming appointments scheduled.";
-    console.log("HERE")
     upcomingAppointments.appendChild(noAppointments);
     upcomingText.innerHTML = "Upcoming Appointments: 0";
   }
@@ -34,7 +33,6 @@ function loadAppointments() {
       // Fill in Appointment Details
       viewDetails.setAttribute("onclick", `apptModal("${appts[i].type}", "${appts[i].date}", "${appts[i].time}",  "${i}")`);
       viewDetails.classList.add("expandModal");
-      // add in i to apptModal
       viewDetails.innerHTML = "More Details";
       appt.appendChild(viewDetails);
       if(i%2 == 0){
@@ -50,7 +48,6 @@ function loadAppointments() {
 
 // Create Modal for Upcoming Appointments
 function apptModal(type, date, time, i) {
-// include i
   var modal = document.getElementById("detailsModal");
   let modalType = document.getElementById("modalType");
   let modalDate = document.getElementById("modalDate");
@@ -77,9 +74,6 @@ function apptModal(type, date, time, i) {
 
 // Cancel Appointment
 function cancelAppointment(i) {
-  //let upcomingAppointments = document.getElementById("upcomingAppointments");
-  //upcomingAppointments.removeChild(upcomingAppointments.children[i]);
-  //spanClose();
   appts.splice(i,1);
   localStorage.setItem("appts",JSON.stringify(appts));
   location.reload();

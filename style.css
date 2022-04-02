@@ -2,24 +2,25 @@
 body {
   margin: 0;
   font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 1.042vw;
 }
 
 
 h1{
-  font-size: 24px;
+  font-size: 1.563vw;
   font-weight: bold;
 }
 
 
 h2{
-  font-size:  20px;
+  font-size:  1.302vw;
 }
 
 
 h3{
-  font-weight: bold;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-weight: bolder;
+  font-size: 1.25vw;
+  margin-bottom: 3%;
 }
 
 
@@ -52,8 +53,8 @@ a:hover{
   color: #f2f2f2;
   text-align: center;
   padding: 1%;
-  font-size: 16px;
-  float:  right;
+  font-size: 1.042vw;
+  float: right;
 }
 
 #logo {
@@ -66,10 +67,15 @@ a:hover{
 
 /*********** SIDE NAV ************/
 #sidenav {
-  height: 100vh;
   width: 20%;
   background-color: #e3dac3;
   float: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow-y: auto;
+  position: fixed;
 }
 
 
@@ -86,7 +92,7 @@ a:hover{
 #content {
   float: left;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 25%;
   width: 66%;
 }
 
@@ -114,7 +120,7 @@ button {
   text-align:  center;
   text-decoration: none;
   display:  inline-block;
-  font-size:  18px;
+  font-size:  1.172vw;
   border-radius: 8px;
   width:  75%;
   margin: 1%;
@@ -142,7 +148,6 @@ button {
 #expandModal{
   background-color: #FFF;
   color: black;
-  font-size: 14px;
   float: right;
 }
 
@@ -167,13 +172,12 @@ button {
 
 #timeradio label {
   display: inline-block;
-  background-color:  #FFF;
+  background-color: #FFF;
   color: black;
   border: 2px solid #C4C4C4;
-  margin-top: 10px;
+  margin-top: 10%;
   width:  auto;
   padding: 5%;
-  font-size: 14px;
   padding: 5%;
   border-radius: 10%;
 }
@@ -200,7 +204,7 @@ select{
   margin-left: 20%;
   margin-bottom: 5%;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 1.172vw;
   width: 50%;
 }
 
@@ -267,7 +271,7 @@ width:  90%;
   background-color: #FFF;
   color: black;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.302vw;
 }
 
 #upcoming-appointments-tb tr:nth-child(even), #lab-results-tb tr:nth-child(even),#previous-appointments-tb tr:nth-child(even) {
@@ -276,13 +280,13 @@ width:  90%;
 
 /*********** APPOINTMENTS PAGE CONTENT************/
 .upcoming-appointments {
-  width: 275px;
-  height: 100px;
+  width: 22vw;
+  height: 12vh;
   border: 1px solid #C4C4C4;
-  padding: 20px;
-  box-shadow: 5px 10px 8px #EAEAEA;
-  margin-bottom: 36px;
-  margin-left: 10px;
+  padding: 5%;
+  box-shadow: 1px 10px 8px #EAEAEA;
+  margin-bottom: 10%;
+  margin-left: 2%;
 }
 
 .upcoming-appointments:hover {
@@ -290,34 +294,33 @@ width:  90%;
 }
 
 .appointment-title{
-  font-size: 18px;
+  font-size: 1.172vw;
   font-weight: bolder;
   padding-bottom: 0.5%;
 }
 
-
 #appointment-confirmation {
   margin: auto;
-  width: 50%;
+  width: 22vw;
   border: 1px solid #C4C4C4;
-  padding:  10px;
-  box-shadow:  5px 10px 8px #EAEAEA;
+  padding: 1.5%;
+  box-shadow: 5px 10px 8px #EAEAEA;
   margin-bottom: 5%;
 }
 
 /*********** MODAL ON APPOINTMENTS PAGE************/
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
 }
 
 
@@ -338,7 +341,7 @@ width:  90%;
 .close {
   color: black;
   float: right;
-  font-size: 28px;
+  font-size: 1.823vw;
   font-weight: bold;
 }
 
