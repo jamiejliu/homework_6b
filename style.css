@@ -50,6 +50,7 @@ a:hover{
   position: fixed;
   top: 0;
   height: 50px;
+  z-index: 10;
 }
 
 #topnav a {
@@ -102,7 +103,7 @@ a:hover{
 
 .col1 {
   float:  left;
-  width:  45%;
+  width:  50%;
 }
 
 .col2 {
@@ -179,9 +180,8 @@ button {
   background-color: #FFF;
   color: black;
   border: 2px solid #C4C4C4;
-  margin-top: 10%;
+  margin-top: 1.5vh;
   width:  auto;
-  padding: 5%;
   padding: 5%;
   border-radius: 10%;
 }

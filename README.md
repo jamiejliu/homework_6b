@@ -11,7 +11,9 @@ On the appointments page, you can see upcoming appointments in more detail and h
 
 
 BONUS RESPONSIVE DESIGN:
-For the bonus, I ensured that my website was responsive to different laptop and tablet sizes. The text, margins, buttons, and table should resize accordingly depending on screensize as I used percentages, vh, and vw. There were a few elements where I chose to keep pixels, for example the border radius of 1px and box shadows because I felt that changing the size of the display did not have a significant impact on their appearance.
+For the bonus, I ensured that my website was responsive to different laptop and tablet sizes. The text, margins, buttons, and table should resize accordingly depending on screensize as I used percentages, vh, and vw.
+
+There were a few elements where I chose to keep pixels, for example the border radius of 1px and box shadows because I felt that changing the size of the display did not have a significant impact on their appearance.
 
 My website is not responsive to mobile devices yet.
 
